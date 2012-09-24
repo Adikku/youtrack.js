@@ -14,9 +14,14 @@
 			"http" : "*",
 			"xml2js": "*"
 		},
-	"devDependencies" : {},
+	"devDependencies" : {
+			"mocha" : "*",
+			"should" : "*",
+			"sinon" : "*"
+		},
 	"optionalDependencies": {},
 	"engines": {"node":"*"},
 	"directories" : {"lib":"lib"},
-	"main": "./lib/youtrack.js"
+	"main": "./lib/youtrack.js",
+	"scripts" : {"test":"mocha"}
 }

@@ -1,4 +1,5 @@
-var youTrack = require("../lib/youtrack")
+var youTrack = require("../lib/youtrack");
+var sinon = require("sinon");
 var assert = require("assert");
 
 describe('youTrack', function(){
@@ -10,9 +11,11 @@ describe('youTrack', function(){
 			assert.equal("8080", youTrack.config.port)
 		});
 	});
-	describe('doSomething', function(){
-		it('should say that it did something', function(){			
-			assert.equal("I just did something...", youTrack.doSomething());
+	describe('findIssuesByProject', function(){
+		it('should not find any issues for the project', function(){
+			var doneCallback = sinon.spy();			
+			youTrack.findIssuesByProject("Moose", {}, doneCallback);
+			assert(doneCallback.called)
 		});
 	});
 });
