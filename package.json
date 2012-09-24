@@ -1,0 +1,22 @@
+{
+	"name": "YouTrack.js",
+	"version" : "0.0.1",
+	"description" : "A YouTrack module for Javascript",
+	"homepage" : ["https://github.com/neilb14/youtrack.js"],
+	"repository" :{
+		"type":"git",
+		"url":"git://github.com/neilb14/youtrack.js.git"
+	},
+	"keywords":["youtrack"],
+	"author": {"name":"Neil Bourgeois", "email":"neil.bourgeois@gmail.com"},
+	"_id":"youtrack.js@0.0.1",
+	"dependencies": {
+			"http" : "*",
+			"xml2js": "*"
+		},
+	"devDependencies" : {},
+	"optionalDependencies": {},
+	"engines": {"node":"*"},
+	"directories" : {"lib":"lib"},
+	"main": "./lib/youtrack.js"
+}
